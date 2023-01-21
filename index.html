@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="https://kit.fontawesome.com/1ca1444e32.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="font-Roboto">
+    <header class="">
+        <div class="flex flex-col items-center bg-portada bg-cover bg-center h-[70vh] md:h-[90vh] lg:h-[100vh] w-full">
+        <nav class="navbar z-20">
+            <div class="logo cursor-pointer">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="menu-icon cursor-pointer">
+                <i id="icon" class="fa-solid fa-bars "></i>
+            </div>
+            <div class="crystal hidden"></div>
+            <div class="menu-container transition-all duration-600 ease-out hidden">
+                <ul class="text-white text-lg font-semibold lg:text-xl">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class=" flex flex-col justify-center items-center h-[88%]">
+                <h1 class="text-white text-4xl text-center font-bold uppercase drop-shadow-lg px-3 md:text-5xl lg:text-6xl">CRAFTSMANSHIP + EXPERIENCE</h1>
+                <p class="text-white text-3xl text-center font-bold mt-8 drop-shadow-md px-3 md:text-4xl">We're the solution to your next drywall or painting project</p>
+                <div class="flex items-center justify-center mt-10 md:mt-16">
+                    <button class="bg-primary uppercase text-white font-semibold text-lg px-6 py-2 drop-shadow-md transition-all
+                    duration-400 ease-out hover:bg-secondary hover:scale-105 md:text-xl lg:text-2xl lg:px-8 lg:py-3">OUR SERVICES</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="bg-primary flex flex-col justify-center items-center p-8">
+        <p class="text-white text-center uppercase font-bold text-2xl mt-2 md:text-3xl lg:text-4xl  lg:mt-6">THE TWIN CITIES FIRST CHOICE IN DRYWALL</p>
+        <p class="text-white text-center font-thin mt-8 md:text-lg lg:text-xl">Our years of experience in residential and commercial projects shows in our work.</p>
+        <div class="grid justify-center items-center gap-4 grid-cols-1 mt-6 sm:grid-cols-2 md:grid-cols-4 md:mt-8 lg:mb-6">
+            <div class="services-icon">
+                <img src="/img/icon-wht-drywall.png" alt="">
+                <p class="uppercase text-white mt-2">drywall</p>
+            </div>
+            <div class="services-icon">
+                <img src="/img/icon-wht-finishing.png" alt="">
+                <p class="uppercase text-white mt-2">finishes</p>
+            </div>
+            <div class="services-icon">
+                <img src="/img/icon-wht-painting.png" alt="">
+                <p class="uppercase text-white mt-2">painting</p>
+            </div>
+            <div class="services-icon">
+                <img src="/img/icon-wht-procurement.png" alt="">
+                <p class="uppercase text-white mt-2">procurement</p>
+            </div>
+        </div>
+    </main>
+    <section class="flex flex-col justify-center items-center">
+        <p class="uppercase font-bold text-2xl mt-6 text-center text-primary md:text-3xl lg:text-4xl lg:mt-10">Featured Projects</p>
+        <div class="grid justify-center max-w-7xl gap-4 grid-cols-1 px-6 my-6 sm:grid-cols-2 lg:grid-cols-4 md:mb-10">
+            <img class="img-featured" src="img/featured-01.jpg" alt="">
+            <img class="img-featured" src="img/featured-02.jpg" alt="">
+            <img class="img-featured" src="img/featured-03.jpg" alt="">
+            <img class="img-featured" src="img/featured-04.jpg" alt="">
+            <img class="img-featured" src="img/featured-05.jpg" alt="">
+            <img class="img-featured" src="img/featured-06.jpg" alt="">
+            <img class="img-featured" src="img/featured-07.jpg" alt="">
+            <img class="img-featured" src="img/featured-08.jpg" alt="">
+        </div>
+    </section>
+    <section class="bg-tertiary px-8 py-8 relative h-52 min-h-full flex flex-col justify-center items-center">
+        <div class="slides hidden">
+            <p class="text-xl text-primary text-center lg:text-2xl">"Great company, quality work. They stand by their work!"</p>
+            <p class="text-lg text-secondary text-center mt-2 lg:text-xl">- Natasha</p>
+        </div>
+        <div class="slides hidden">
+            <p class="text-xl text-primary text-center lg:text-2xl">"This is the hardest working team that has ever worked on our home. I give them the highest recommendation."</p>
+            <p class="text-lg text-secondary text-center mt-2 lg:text-xl">- Linda</p>
+        </div>
+        <div class="slides hidden">
+            <p class="text-xl text-primary text-center lg:text-2xl">"I've been doing business with APV for years, and their team is second to none very professional, delivers every time, and I'll do business with them again."</p>
+            <p class="text-lg text-secondary text-center mt-2 lg:text-xl">- Aaron</p>
+        </div>
+        <a class="prev" onclick="showSlide(-1)"><i class="fa-solid fa-circle-chevron-left"></i></a>
+        <a class="next" onclick="showSlide(1)"><i class="fa-solid fa-circle-chevron-right"></i></a>
+    </section>
+    <section class="bg-secondary p-8">
+        <p class="text-white text-center uppercase font-bold text-2xl md:text-3xl lg:text-4xl lg:mt-6">GET YOUR PROJECT STARTED</p>
+        <p class="text-white text-center font-thin mt-8 md:text-lg lg:text-xl">Connect with our professional design team to discuss your next project.</p>
+        <div class="flex items-center justify-center mt-8">
+            <button class="bg-primary uppercase text-white font-semibold text-lg px-6 py-2 drop-shadow-md transition-all duration-400 ease-out
+             hover:bg-tertiary hover:text-primary hover:scale-105 md:text-xl lg:text-2xl lg:px-8 lg:py-3 lg:mb-4">contact us</button>
+        </div>
+    </section>
+    <footer class="bg-secodarylight flex items-center justify-center">
+        <div class="flex flex-col py-8 md:flex-row  w-full max-w-7xl md:justify-between md:px-8 ">
+            <div class="flex flex-col text-center text-primary font-bold md:text-left lg:text-lg">
+                <p>© 2022 APV Drywall, Inc. All Rights Reserved.</p>
+                <p>15020 27th Ave N. Plymouth MN. 55447</p>
+                <p>612-232-4645</p>
+            </div>
+            <ul class="flex flex-row justify-center items-center mt-6 md:mt-0 text-3xl font-semibold text-primary lg:text-4xl">
+                <li class="px-2 lg:px-3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="px-2 lg:px-3"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="px-2 lg:px-3"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
